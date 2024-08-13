@@ -29,12 +29,20 @@
         font-size: 1.5rem;
         font-weight: bold;
       }
+      .bg-grd {
+        background: rgb(4, 42, 102);
+        background: linear-gradient(0deg, rgb(177, 198, 233) 0%, rgb(2, 38, 50) 100%);
+      }
+      .bg-card {
+        background: rgb(180, 195, 218);
+        background: linear-gradient(0deg, rgba(180, 195, 218, 1) 0%, rgba(7, 195, 255, 1) 100%);
+      }
     </style>
   </head>
-  <body>
-    <div class="container-fluid mt-4 text-center">
-      <div class="card shadow">
-        <div class="card-header text-center fs-2 bg-light">COVID-19 Tracker</div>
+  <body class="bg-grd">
+    <div class="container-fluid mt-4 text-center p-auto mb-5 py-5">
+      <div class="card shadow bg-card">
+        <div class="card-header text-center fs-2 text-white">COVID-19 Tracker</div>
         <div class="card-body">
           <div class="row justify-content-center">
             <div class="col-12">
@@ -123,10 +131,11 @@
           </div>
         </div>
       </div>
+
+      <div class="py-3 my-4 fixed-bottom">
+        <p class="text-center  text-white">© 2024 Kadarisman</p>
+      </div>
     </div>
-    <footer class="py-3 my-4 fixed-bottom bg-light">
-      <p class="text-center text-body-secondary">© 2024 Kadarisman</p>
-    </footer>
     <script>
       $("#btn-fetch").click(function (event) {
         event.preventDefault();
